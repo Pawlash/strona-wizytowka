@@ -58,6 +58,7 @@ article + p {
   justify-content: center;
   width:200px;
   height:50px;
+  margin-bottom:10px;
 }
 .button_uncentered {
   display:flex; /* jak cos nie dziala to trzeba to dodac i dziala 👍 */
