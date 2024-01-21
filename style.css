@@ -6,12 +6,8 @@
   min-height: 100%;
   z-index:-1;
 }
-body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
-  bedzie calkowicie wysrodkowana - w sumie miala byc od lewej tak ale sie zdenerowalem
-  bo jak dawalem logo na lewo to tekst był pod logo a nie na prawo od niego XD */
+body {
   font-family:Arial, Helvetica, sans-serif;
-  -webkit-text-stroke: 0.1px black; /* próba bardziej przejrzystego tekstu z tym super mega tlem */
-  text-align: center;
   color:white;
   background-color: #121212; /* jakby komuś nie działał filmik, to będzie miał dalej tło */
 }
@@ -20,30 +16,63 @@ body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
   margin-left:auto;
   margin-right:auto;
 }
+h1 {
+  text-align: center;
+}
+.text_margin {
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:50px;;
+}
 article { /* kokodżambo z artykulem i tą drugą linią tekstu pod nim */
+  text-align: center;
   margin-top:50px;
   margin-left:25%;
   margin-right:25%;
   line-height:20px;
 }
 article + p {
+  text-align: center;
   margin-top:20px;
   margin-left:25%;
   margin-right:25%;
   line-height:20px;
 }
-.social { /* Te cholerne ikonki, które udało mi się zrobić po 20 minutach */
+.social { /* Te cholerne ikonki */
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
-
 .social img {
   width: 50px;
   height: 50px;
   margin-left:15px;
 }
-
+.button {
+  display:flex; /* jak cos nie dziala to trzeba to dodac i dziala 👍 */
+  margin:auto;
+  background-color:#121212;
+  color:inherit;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  width:200px;
+  height:50px;
+}
+.button_uncentered {
+  display:flex; /* jak cos nie dziala to trzeba to dodac i dziala 👍 */
+  margin-left:10%;
+  background-color:#3d3d3d;
+  color:inherit;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  max-width: 200px;
+  padding:20px;
+}
+a:hover.button {
+  background-color:#444444;
+}
 footer { /* Cholerna stopka, która miała być na końcu strony, a gdy dam jej pozycje absolutną to robi
   sie jakis smieszny scrollbar poziomy na cala przegladarke, wiec na razie zostaje pod tekstem */
   text-align: center;
