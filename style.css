@@ -1,37 +1,38 @@
-body {
-  font-family:Arial, Helvetica, sans-serif;
-  background-color: #121212;
-  color:white
+#background { /* Super mega tlo, scrollowanie mojej strony glownej na tiktoku -  jak uczynic tekst bardziej przejrzystym? do analizy */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1; 
 }
-.logo {
+body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
+  bedzie calkowicie wysrodkowana - w sumie miala byc od lewej tak ale sie zdenerowalem
+  bo jak dawalem logo na lewo to tekst był pod logo a nie na prawo od niego XD */
+  font-family:Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 0.1px black; /* próba bardziej przejrzystego tekstu z tym super mega tlem */
+  text-align: center;
+  color:white;
+  background: color #121212; /* fallback jakby ktos mial wylaczone filmy czy cos, nawet nie wiem czy tak sie da */
+}
+.logo { /* Wyśrodkowanie logo */
   display:block;
   margin-left:auto;
   margin-right:auto;
 }
-.logo + h1 {
-  text-align: center;
-}
-article {
+article { /* kokodżambo z artykulem i tą drugą linią tekstu pod nim */
   margin-top:50px;
-  text-align: center;
   margin-left:25%;
   margin-right:25%;
-  line-height:20px
+  line-height:20px;
 }
 article + p {
   margin-top:20px;
-  text-align: center;
   margin-left:25%;
   margin-right:25%;
-  line-height:20px
+  line-height:20px;
 }
-ul, li {
-  margin-top:20px;
-  margin-left:25%;
-  margin-right:25%;
-  line-height:20px
-}
-.social {
+.social { /* Te cholerne ikonki, które udało mi się zrobić po 20 minutach */
   display: flex;
   justify-content: center;
   margin-top: 15px;
@@ -43,7 +44,8 @@ ul, li {
   margin-left:15px;
 }
 
-footer {
+footer { /* Cholerna stopka, która miała być na końcu strony, a gdy dam jej pozycje absolutną to robi
+  sie jakis smieszny scrollbar poziomy na cala przegladarke, wiec na razie zostaje pod tekstem */
   text-align: center;
   color:lightgray;
   margin-top:25px;
