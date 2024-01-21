@@ -1,10 +1,10 @@
-#background { /* Super mega tlo, scrollowanie mojej strony glownej na tiktoku -  jak uczynic tekst bardziej przejrzystym? do analizy */
+#background { /* Super mega tlo, scrollowanie mojej strony glownej na jak uczynic tekst bardziej przejrzystym? do analizy */
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index:-1; 
+  z-index:-1;
 }
 body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
   bedzie calkowicie wysrodkowana - w sumie miala byc od lewej tak ale sie zdenerowalem
@@ -13,6 +13,7 @@ body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
   -webkit-text-stroke: 0.1px black; /* próba bardziej przejrzystego tekstu z tym super mega tlem */
   text-align: center;
   color:white;
+  background-color: #121212; /* jakby komuś nie działał filmik, to będzie miał dalej tło */
 }
 .logo { /* Wyśrodkowanie logo */
   display:block;
