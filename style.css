@@ -49,7 +49,7 @@ article + p {
   margin-left:15px;
 }
 .button {
-  display:flex; /* jak cos nie dziala to trzeba to dodac i dziala 👍 */
+  display:flex;
   margin:auto;
   background-color:#121212;
   color:inherit;
@@ -61,7 +61,7 @@ article + p {
   margin-bottom:10px;
 }
 .button_uncentered {
-  display:flex; /* jak cos nie dziala to trzeba to dodac i dziala 👍 */
+  display:flex;
   margin-left:10%;
   background-color:#3d3d3d;
   color:inherit;
