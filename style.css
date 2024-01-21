@@ -13,7 +13,6 @@ body { /* Ustawienie czcionki, wyśrodkowanie całego tekstu - na razie strona
   -webkit-text-stroke: 0.1px black; /* próba bardziej przejrzystego tekstu z tym super mega tlem */
   text-align: center;
   color:white;
-  background: color #121212; /* fallback jakby ktos mial wylaczone filmy czy cos, nawet nie wiem czy tak sie da */
 }
 .logo { /* Wyśrodkowanie logo */
   display:block;
