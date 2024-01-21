@@ -18,7 +18,7 @@ article {
   margin-right:25%;
   line-height:20px
 }
-p {
+article + p {
   margin-top:20px;
   text-align: center;
   margin-left:25%;
@@ -50,4 +50,5 @@ footer {
   text-align: center;
   color:lightgray;
   margin-bottom:25px;
+  line-height:10px;
 }
