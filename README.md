@@ -1,4 +1,4 @@
-# strona-wizytowka
+# Pawlash.Github.io
 Strona z moimi socialami i innymi bajerami.
 Głównie służyć mi będzie do nauki HTMLa, CSSa i wkrótce JS'a. Na początku kod pewnie będzie tak rozjechany, że szkoda gadać, ale później będę dokonywał jakichś zmian, żeby to wszystko uporządkować.
 
