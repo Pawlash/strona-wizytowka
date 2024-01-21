@@ -44,11 +44,9 @@ ul, li {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   color:lightgray;
+  margin-top:25px;
   margin-bottom:25px;
   line-height:10px;
 }
