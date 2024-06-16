@@ -1,77 +1,49 @@
-#background { /* Super mega tlo, scrollowanie mojej strony glownej na jak uczynic tekst bardziej przejrzystym? do analizy */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index:-1;
-}
 body {
   font-family:Arial, Helvetica, sans-serif;
   color:white;
-  background-color: #121212; /* jakby komuś nie działał filmik, to będzie miał dalej tło */
+  background-color: #121212;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-.logo { /* Wyśrodkowanie logo */
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  filter:drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5))
-}
-.center {
-  text-align: center;
-}
-article {
-  margin-top:50px;
-  margin-left:25%;
-  margin-right:25%;
-  line-height:20px;
-}
-.social { /* Te cholerne ikonki */
-  display: flex;
+.logo{
+  display:flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  margin-top:3vh;
 }
-.social img {
-  width: 50px;
-  height: 50px;
-  margin-left:15px;
-  transition: transform 0.3s ease-in-out;
+.logo img{
+  width:16vh;
 }
-.social a:hover img{
-  transform: scale(1.2);
+.big_text{
+  margin-top:1vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:4vh;
+  font-weight: bold;
+}
+.basic_text{
+  margin-top:2vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size:2vh;
+}
+a{
+  text-decoration: none;
+  color:inherit;
 }
 .button {
   display:flex;
-  margin:auto;
-  background-color:#121212;
-  color:inherit;
+  margin: 1.5vh auto 0 auto;
+  background-color:#292929;
   align-items: center;
-  text-decoration: none;
   justify-content: center;
-  width:200px;
-  height:50px;
-  margin-bottom:10px;
+  width:20vh;
+  height:6vh;
+  font-size:1.75vh;
+  transition: transform 0.3s ease;
 }
-.button_uncentered {
-  display:flex;
-  margin-left:10%;
-  background-color:#3d3d3d;
-  color:inherit;
-  align-items: center;
-  text-decoration: none;
-  justify-content: center;
-  max-width: 200px;
-  padding:20px;
-}
-a:hover.button {
-  background-color:#444444;
-}
-footer { /* Cholerna stopka, która miała być na końcu strony, a gdy dam jej pozycje absolutną to robi
-  sie jakis smieszny scrollbar poziomy na cala przegladarke, wiec na razie zostaje pod tekstem */
-  text-align: center;
-  color:lightgray;
-  margin-top:25px;
-  margin-bottom:25px;
-  line-height:10px;
+.button:hover{
+  background-color: #464646;
+  transform: scale(1.05);
 }
