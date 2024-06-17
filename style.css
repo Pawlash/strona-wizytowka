@@ -11,7 +11,7 @@ body {
   margin-top:3vh;
 }
 .logo img{
-  width:16vh;
+  width:14vh;
 }
 .big_text{
   margin-top:1vh;
@@ -42,6 +42,8 @@ a{
   height:6vh;
   font-size:1.75vh;
   transition: transform 0.3s ease;
+  border-radius:10px;
+  user-select:none;
 }
 .button:hover{
   background-color: #464646;
