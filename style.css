@@ -42,7 +42,7 @@ a{
   height:6vh;
   font-size:1.75vh;
   transition: transform 0.3s ease;
-  border-radius:10px;
+  border-radius:1vh;
   user-select:none;
 }
 .button:hover{
