@@ -1,2 +1,2 @@
 # Pawlash.Github.io
-Strona z moimi socialami, no i w sumie tyle
+website with my social media links, and my projects (made while learning basic html&js)
