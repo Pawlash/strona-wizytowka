@@ -8,25 +8,26 @@ body {
   display:flex;
   align-items: center;
   justify-content: center;
-  margin-top:3vh;
+  margin-top:1.5rem;
 }
 .logo img{
-  width:14vh;
+  width:128px;
+  height:128px;
 }
 .big_text{
-  margin-top:1vh;
+  margin-top:1rem;
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size:4vh;
+  font-size:2rem;
   font-weight: bold;
 }
 .basic_text{
-  margin-top:2vh;
+  margin-top:0.5rem;
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size:2vh;
+  font-size:1rem;
 }
 a{
   text-decoration: none;
@@ -34,15 +35,15 @@ a{
 }
 .button {
   display:flex;
-  margin: 1.5vh auto 0 auto;
+  height:50px;
+  max-width:200px;
+  margin: 1rem auto 0 auto;
   background-color:#292929;
   align-items: center;
   justify-content: center;
-  width:20vh;
-  height:6vh;
-  font-size:1.75vh;
+  font-size:1rem;
   transition: transform 0.3s ease;
-  border-radius:1vh;
+  border-radius:0.3rem;
   user-select:none;
 }
 .button:hover{
