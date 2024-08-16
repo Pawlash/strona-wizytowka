@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Pawlash</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <p class="logo"><img src="images/logo/logo.webp" alt="Logo"></p>
-    <p class="big_text">Pawlash</p>
-    <p class="basic_text">Cześć, na tej stronie znajdziesz czym aktualnie się zajmuje i moje sociale.</p>
-    <a class="button" href="https://tiktok.com/@Pawlash">TikTok</a>
-    <a class="button" href="https://youtube.com/@Pawlash">YouTube</a>
-    <a class="button" href="https://github.com/Pawlash">Github</a> 
-    <a class="button" href="mailto:pawlash333@gmail.com">Mail kontaktowy</a>
-    <p class="basic_text">Moje projekty</p>
-    <a class="button" href="https://pawlash.github.io/password-validator/">Password Validator</a>
-    <a class="button" href="https://pawlash.github.io/simple-calculator/">Simple Calculator</a>
+  <header class="text-center">
+    <img id="header-image" class="logo-img" src="images/caracal.avif" alt="caracal photo">
+    <h1>Hi, my name is Paweł.</h1>
+  </header>
+  <main class="ml-15p">
+    <ul>
+      <li>18 years old.</li>
+      <li>Tech enthusiast</li>
+      <li>I use NixOS, btw (!)</li>
+      <li>Currently, I'm diving into everything tech-related. I'm learning both some programming languages and web development.</li>
+    </ul>
+    <p>You can always reach me out via <a href="mailto:pawlash333@gmail.com">e-mail</a> or <a href="" title="tag: pawlash" 
+       onmouseover="changeImage('images/discord.avif')"
+       onmouseout="resetImage()">Discord</a>. I also have a <a href="https://tiktok.com/@Pawlash">TikTok</a> and <a href="https://youtube.com/@Pawlash">YouTube</a> channel.</p>
+    <p>Check out some of my small projects:</p>
+    <a class="button" href="https://pawlash.github.io/simple-calculator"
+       onmouseover="changeImage('images/projects/simple-calculator.avif')"
+       onmouseout="resetImage()">Simple Calculator</a>
+    
+    <a class="button" href="https://pawlash.github.io/password-validator"
+       onmouseover="changeImage('images/projects/password-validator.avif')"
+       onmouseout="resetImage()">Password Validator</a>
+  </main>
+
+  <script>
+    function changeImage(newSrc) {
+      document.getElementById('header-image').src = newSrc;
+    }
+
+    function resetImage() {
+      document.getElementById('header-image').src = 'images/caracal.avif';
+    }
+  </script>
 </body>
+</html>
