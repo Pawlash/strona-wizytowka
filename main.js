@@ -8,6 +8,15 @@ function resetImage() {
 
 document.querySelector("#discord-link").addEventListener('click', function(event) {
   event.preventDefault();
-  changeImage('images/discord.avif');
-  document.querySelector("#name").textContent = 'Hi, my name is pawlash.';
+  
+  const name = document.querySelector("#name");
+  const isDiscordShown = name.textContent === 'Hi, my name is Pawlash.';
+
+  if (isDiscordShown) {
+    resetImage();
+    name.textContent = 'Hi, my name is Paweł.';
+  } else {
+    changeImage('images/discord.avif');
+    name.textContent = 'Hi, my name is Pawlash.';
+  }
 });
