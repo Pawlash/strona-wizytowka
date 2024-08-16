@@ -13,18 +13,20 @@
 <body>
   <header class="text-center">
     <img id="header-image" class="logo-img" src="images/caracal.avif" alt="caracal photo">
-    <h1>Hi, my name is Paweł.</h1>
+    <h1 id="name">Hi, my name is Paweł.</h1>
   </header>
-  <main class="ml-15p">
+  <main class="m-horizontal-15">
     <ul>
-      <li>18 years old.</li>
+      <li>18 years old</li>
       <li>Tech enthusiast</li>
       <li>I use NixOS, btw (!)</li>
-      <li>Currently, I'm diving into everything tech-related. I'm learning both some programming languages and web development.</li>
+      <li>Currently, I'm diving into everything tech-related. I'm learning both some programming languages and web development</li>
     </ul>
-    <p>You can always reach me out via <a href="mailto:pawlash333@gmail.com">e-mail</a> or <a href="" title="tag: pawlash" 
-       onmouseover="changeImage('images/discord.avif')"
-       onmouseout="resetImage()">Discord</a>. I also have a <a href="https://tiktok.com/@Pawlash">TikTok</a> and <a href="https://youtube.com/@Pawlash">YouTube</a> channel.</p>
+    <p>You can always reach me out via <a href="mailto:pawlash333@gmail.com">e-mail</a> or 
+       <a href="#" title="tag: pawlash" id="discord-link">Discord</a>. 
+       I also have a <a href="https://tiktok.com/@Pawlash">TikTok</a> and 
+       <a href="https://youtube.com/@Pawlash">YouTube</a> channel.
+    </p>
     <p>Check out some of my small projects:</p>
     <a class="button" href="https://pawlash.github.io/simple-calculator"
        onmouseover="changeImage('images/projects/simple-calculator.avif')"
@@ -34,15 +36,6 @@
        onmouseover="changeImage('images/projects/password-validator.avif')"
        onmouseout="resetImage()">Password Validator</a>
   </main>
-
-  <script>
-    function changeImage(newSrc) {
-      document.getElementById('header-image').src = newSrc;
-    }
-
-    function resetImage() {
-      document.getElementById('header-image').src = 'images/caracal.avif';
-    }
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

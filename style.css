@@ -6,11 +6,11 @@
 a{
   color:inherit;
 }
+.m-horizontal-15{
+  margin: 0 15% 0 15%;
+}
 .text-center{
   text-align: center;
-}
-.ml-15p{
-  margin-left: 15%;
 }
 .logo-img{
   height:300px;
