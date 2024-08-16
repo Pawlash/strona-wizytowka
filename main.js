@@ -10,13 +10,13 @@ document.querySelector("#discord-link").addEventListener('click', function(event
   event.preventDefault();
   
   const name = document.querySelector("#name");
-  const isDiscordShown = name.textContent === 'Hi, my name is Pawlash.';
+  const isDiscordShown = name.textContent === 'Hi, my name is pawlash.';
 
   if (isDiscordShown) {
     resetImage();
     name.textContent = 'Hi, my name is Paweł.';
   } else {
     changeImage('images/discord.avif');
-    name.textContent = 'Hi, my name is Pawlash.';
+    name.textContent = 'Hi, my name is pawlash.';
   }
 });
