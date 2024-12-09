@@ -1,26 +1,10 @@
-// preload all images, so hover effect will be smooth
-window.addEventListener("load", () => {
-  const images = [
-    "images/discord.avif",
-    "images/caracal.avif",
-    "images/projects/currency-converter.avif",
-    "images/projects/password-validator.avif",
-    "images/projects/simple-calculator.avif",
-    "images/projects/simple-todo-list.avif",
-  ];
-
-  images.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
-});
-
 const buttons = document.querySelectorAll(".button");
 
 buttons.forEach((button) => {
   button.addEventListener("mouseover", function () {
     const imageSrc = button.getAttribute("data-image");
-    changeImage(imageSrc);
+    const imageAlt = button.textContent;
+    changeImage(imageSrc, imageAlt);
   });
 
   button.addEventListener("mouseout", function () {
@@ -31,12 +15,17 @@ buttons.forEach((button) => {
 const nameElement = document.querySelector("#name");
 let isDiscordShown = false;
 
-function changeImage(newSrc) {
+function changeImage(newSrc, newAlt) {
   document.querySelector("#header-image").src = newSrc;
+  document.querySelector("#header-image").alt = newAlt;
 }
 
 function resetImage() {
-  changeImage(isDiscordShown ? "images/discord.avif" : "images/caracal.avif");
+  const [image, altText] = isDiscordShown 
+    ? ["images/discord.avif", "Discord profile picture"] 
+    : ["images/caracal.avif", "Caracal photo"];
+  
+  changeImage(image, altText);
 }
 
 document
