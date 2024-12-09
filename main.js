@@ -34,10 +34,10 @@ document
     event.preventDefault();
 
     if (isDiscordShown) {
-      changeImage("images/caracal.avif");
+      changeImage("images/caracal.avif", "Caracal photo");
       nameElement.textContent = "Hi, my name is Paweł.";
     } else {
-      changeImage("images/discord.avif");
+      changeImage("images/discord.avif", "Discord profile picture");
       nameElement.textContent = "Hi, my name is pawlash.";
     }
 
