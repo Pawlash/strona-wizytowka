@@ -1,4 +1,4 @@
-:root{
+body{
   background-color: #121212;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +12,7 @@ a{
 .text-center{
   text-align: center;
 }
-.logo-img{
+#header-image{
   height:300px;
 }
 .button{
