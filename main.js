@@ -1,3 +1,4 @@
+// buttons functionality
 const buttons = document.querySelectorAll(".button");
 
 buttons.forEach((button) => {
@@ -21,13 +22,12 @@ function changeImage(newSrc, newAlt) {
 }
 
 function resetImage() {
-  const [image, altText] = isDiscordShown 
-    ? ["images/discord.avif", "Discord profile picture"] 
+  const [image, altText] = isDiscordShown
+    ? ["images/discord.avif", "Discord profile picture"]
     : ["images/caracal.avif", "Caracal photo"];
-  
+
   changeImage(image, altText);
 }
-
 document
   .querySelector("#discord-link")
   .addEventListener("click", function (event) {
@@ -43,3 +43,10 @@ document
 
     isDiscordShown = !isDiscordShown;
   });
+
+// theme switcher
+const themeSwitcher = document.getElementById("theme-switcher");
+themeSwitcher.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  themeSwitcher.classList.toggle("light-mode");
+});
