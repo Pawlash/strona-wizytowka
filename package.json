@@ -9,7 +9,7 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build:css": "postcss public/css/input.css -o public/css/tailwind.css --watch",
+    "build:css": "postcss docs/css/input.css -o docs/css/tailwind.css --watch",
     "format": "prettier . --write"
   }
 }
