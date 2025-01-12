@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link
@@ -42,21 +42,21 @@
       href="images/projects/simple-todo-list.avif"
       as="image"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
     <title>Pawlash</title>
   </head>
-  <body>
-    <img
-      id="theme-switcher"
-      src="images/theme-switch.svg"
-      alt="Theme switcher"
-    />
+  <body class="m-auto w-4/5 min-w-80 max-w-3xl bg-primary font-sans text-white">
     <header class="text-center">
-      <img id="header-image" src="images/caracal.avif" alt="caracal photo" />
-      <h1 id="name">Hi, my name is Paweł.</h1>
+      <img
+        id="header-image"
+        class="m-auto h-80"
+        src="images/caracal.avif"
+        alt="caracal photo"
+      />
+      <h1 id="name" class="text-3xl font-bold">Hi, my name is Paweł.</h1>
     </header>
-    <main class="m-horizontal-15">
-      <ul>
+    <main>
+      <ul class="my-2 list-inside list-disc">
         <li>18 years old</li>
         <li>Tech enthusiast</li>
         <li>I use NixOS, btw (!)</li>
@@ -66,38 +66,41 @@
       </ul>
       <p>
         You can always reach out to me via
-        <a href="mailto:pawlash333@gmail.com">email</a> or
-        <a href="#" title="tag: pawlash" id="discord-link">Discord</a>. I also
-        have a <a href="https://tiktok.com/@Pawlash">TikTok</a> and
-        <a href="https://youtube.com/@Pawlash">YouTube</a> channel. I store my
-        projects on <a href="https://github.com/pawlash">GitHub.</a>
+        <a class="underline" href="mailto:pawlash333@gmail.com">email</a> or
+        <a class="underline" href="#" title="tag: pawlash" id="discord-link"
+          >Discord</a
+        >. I also have a <a class="underline" href="https://tiktok.com/@Pawlash">TikTok</a> and
+        <a class="underline" href="https://youtube.com/@Pawlash">YouTube</a>
+        channel. I store my projects on
+        <a class="underline" href="https://github.com/pawlash">GitHub.</a>
+        I might rewrite this website in Svelte when i'm bored.
       </p>
       <p>Check out some of my small projects:</p>
       <a
-        class="button"
+        class="button my-3 flex h-12 w-48 items-center justify-center rounded-lg bg-secondary transition-transform duration-200 ease-in hover:scale-105 hover:bg-neutral-700"
         data-image="images/projects/simple-calculator.avif"
         href="https://pawlash.github.io/simple-calculator"
         >Simple Calculator</a
       >
       <a
-        class="button"
+        class="button my-3 flex h-12 w-48 items-center justify-center rounded-lg bg-secondary transition-transform duration-200 ease-in hover:scale-105 hover:bg-neutral-700"
         data-image="images/projects/password-validator.avif"
         href="https://pawlash.github.io/password-validator"
         >Password Validator</a
       >
       <a
-        class="button"
+        class="button my-3 flex h-12 w-48 items-center justify-center rounded-lg bg-secondary transition-transform duration-200 ease-in hover:scale-105 hover:bg-neutral-700"
         data-image="images/projects/currency-converter.avif"
         href="https://pawlash.github.io/currency-converter"
         >Currency Converter</a
       >
       <a
-        class="button"
+        class="button my-3 flex h-12 w-48 items-center justify-center rounded-lg bg-secondary transition-transform duration-200 ease-in hover:scale-105 hover:bg-neutral-700"
         data-image="images/projects/simple-todo-list.avif"
         href="https://pawlash.github.io/simple-todo-list"
         >Simple Todo List</a
       >
     </main>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

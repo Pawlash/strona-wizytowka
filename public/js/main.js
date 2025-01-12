@@ -43,10 +43,3 @@ document
 
     isDiscordShown = !isDiscordShown;
   });
-
-// theme switcher
-const themeSwitcher = document.getElementById("theme-switcher");
-themeSwitcher.addEventListener("click", () => {
-  document.body.classList.toggle("light-mode");
-  themeSwitcher.classList.toggle("light-mode");
-});

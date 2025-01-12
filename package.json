@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "build:css": "postcss public/css/input.css -o public/css/tailwind.css --watch",
+    "format": "prettier . --write"
+  }
+}
